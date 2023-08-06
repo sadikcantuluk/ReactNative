@@ -5,14 +5,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.box1}>
-      <View style={styles.child4}></View>
-        <View style={styles.child5}></View>
-        <View style={styles.child6}></View>
+      <Text style={styles.font}>Flutter</Text>
       </View>
       <View style={styles.box2}>
-        <View style={styles.child1}></View>
-        <View style={styles.child2}></View>
-        <View style={styles.child3}></View>
+        <Text style={styles.font}>ReactNative</Text>
       </View>
     </View>
   );
@@ -22,39 +18,45 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'yellow',
-    flexDirection:"row"
   },
   box1:{
     flex:1,
     backgroundColor:"white",
+    justifyContent:"center",
+    alignItems:"center"
   },
   box2:{
     flex:1,
     backgroundColor:"red",
-    flexDirection:"row"
+    flexDirection:"row",
+    justifyContent:"center",
+    alignItems:"center"
   },
-  child1:{
-    flex:1,
-    backgroundColor:"yellow"
-  },
-  child2:{
-    flex:1,
-    backgroundColor:"grey"
-  },
-  child3:{
-    flex:1,
-    backgroundColor:"green"
-  },
-  child4:{
-    flex:1,
-    backgroundColor:"red"
-  },
-  child5:{
-    flex:1,
-    backgroundColor:"blue"
-  },
-  child6:{
-    flex:1,
-    backgroundColor:"white"
+  font:{
+    fontSize:25
   }
+  // child1:{
+  //   flex:1,
+  //   backgroundColor:"yellow"
+  // },
+  // child2:{
+  //   flex:1,
+  //   backgroundColor:"grey"
+  // },
+  // child3:{
+  //   flex:1,
+  //   backgroundColor:"green"
+  // },
+  // child4:{
+  //   flex:1,
+  //   backgroundColor:"red"
+  // },
+  // child5:{
+  //   flex:1,
+  //   backgroundColor:"blue"
+  // },
+  // child6:{
+  //   flex:1,
+  //   backgroundColor:"white"
+  // }
 });
