@@ -4,21 +4,8 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello React Native </Text>
-      <StatusBar style="auto" />
-
-    <View style={[styles.box,styles.box1]}>
-      <Text style={styles.text}>ReactNative</Text>
-    </View>
-
-    <View style={[styles.box,styles.box2]}>
-      <Text style={styles.text}>Flutter</Text>
-    </View>
-
-    <View style={styles.box}>
-      <Text style={styles.text}>Kotlin</Text>
-    </View>
-
+      <View style={styles.box1}></View>
+      <View style={styles.box2}></View>
     </View>
   );
 }
@@ -26,26 +13,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width:300,
-    height:200,
-    backgroundColor:"red",
-    marginBottom:10
+    backgroundColor: 'yellow',
   },
   box1:{
-    backgroundColor:"blue"
+    flex:2,
+    backgroundColor:"white"
   },
   box2:{
-    backgroundColor:"bisque"
-  },
-  text: {
-    fontSize:30,
-    color:"black",
-    textAlign:'center',
-    backgroundColor:"grey"
+    flex:1,
+    backgroundColor:"red"
   }
 });
