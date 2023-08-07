@@ -6,8 +6,8 @@ import Porducts from "./src/components/Porducts";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Title text="React Native" color="blue" number={1} isVisible={true}/>
-      <Title text="Flutter" color="red" number={2} isVisible={true}/>
+      <Title color="blue" number={1} isVisible={true}/>
+      <Title text="Flutter" color="red" number={2} />
       <Title text="JavaScript" color="green" number={3} isVisible={true}/>
       <User data={{id:"1",name:"Sadık",job:"sasads"}}></User>
       <Porducts data={["Cep Telefonu","Ütü","Ocak"]}/>

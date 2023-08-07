@@ -23,10 +23,15 @@ const styles = StyleSheet.create({
 });
 
 Title.propTypes={
-  text:PropTypes.string,
+  text:PropTypes.string.isRequired,
   color:PropTypes.string,
   number:PropTypes.number,
   isVisible:PropTypes.bool
+}
+
+Title.defaultProps={
+  text:"Varsayılan Değer",
+  isVisible:true
 }
 
 export default Title;
