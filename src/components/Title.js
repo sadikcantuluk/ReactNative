@@ -30,7 +30,7 @@ Title.propTypes={
 }
 
 Title.defaultProps={
-  text:"Varsayılan Değer",
+  text:"Varsayilan Değer",
   isVisible:true
 }
 
