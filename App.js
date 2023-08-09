@@ -4,12 +4,17 @@ import User from "./src/components/User";
 import Porducts from "./src/components/Porducts";
 import Resim from "./src/components/Resim";
 import Buton from "./src/components/Buton";
+import FlatListCmp from "./src/components/FlatListCmp";
+import ItemList from "./src/components/ItemList";
 
 export default function App() {
   return (
     <View style={styles.container}>
-     <Text >React Native</Text>
-     <Buton />
+     {/* <Text >React Native</Text> */}
+    {/* <Resim/> */}
+    {/* <FlatListCmp/> */}
+    <ItemList/>
+
     </View>
   );
 }
