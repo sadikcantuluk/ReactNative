@@ -13,7 +13,8 @@ export default function App() {
      {/* <Text >React Native</Text> */}
     {/* <Resim/> */}
     {/* <FlatListCmp/> */}
-    <ItemList/>
+    {/* <ItemList/> */}
+    {/* <ScrollViewCmp/> */}
 
     </View>
   );
