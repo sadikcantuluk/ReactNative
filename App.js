@@ -9,26 +9,28 @@ import ItemList from "./src/components/ItemList";
 import StateCmp from "./src/components/StateCmp";
 import { React, useState } from "react";
 import ObjectStateCmp from "./src/components/ObjectStateCmp";
+import ArrayStateCmp from "./src/components/ArrayStateCmp";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <>
       {/* <Text >React Native</Text> */}
       {/* <Resim/> */}
       {/* <FlatListCmp/> */}
       {/* <ItemList/> */}
       {/* <ScrollViewCmp/> */}
       {/* <StateCmp/> */}
-      <ObjectStateCmp/>
-    </SafeAreaView>
+      {/* <ObjectStateCmp/> */}
+      <ArrayStateCmp />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
-    justifyContent: "center",
-    alignItems: "center",
+    // backgroundColor: "white",
+    // justifyContent: "center",
+    // alignItems: "center",
   },
 });
