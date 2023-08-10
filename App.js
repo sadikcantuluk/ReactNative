@@ -8,6 +8,7 @@ import FlatListCmp from "./src/components/FlatListCmp";
 import ItemList from "./src/components/ItemList";
 import StateCmp from "./src/components/StateCmp";
 import { React, useState } from "react";
+import ObjectStateCmp from "./src/components/ObjectStateCmp";
 
 export default function App() {
   return (
@@ -17,7 +18,8 @@ export default function App() {
       {/* <FlatListCmp/> */}
       {/* <ItemList/> */}
       {/* <ScrollViewCmp/> */}
-      <StateCmp/>
+      {/* <StateCmp/> */}
+      <ObjectStateCmp/>
     </SafeAreaView>
   );
 }
