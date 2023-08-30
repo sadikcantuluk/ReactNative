@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import Title from "./src/components/Title";
 import User from "./src/components/User";
 import Porducts from "./src/components/Porducts";
@@ -10,10 +10,12 @@ import StateCmp from "./src/components/StateCmp";
 import { React, useState } from "react";
 import ObjectStateCmp from "./src/components/ObjectStateCmp";
 import ArrayStateCmp from "./src/components/ArrayStateCmp";
+import EffectCmp from "./src/components/EffectCmp";
+import LoginScreen from "./src/components/LoginScreen";
 
 export default function App() {
   return (
-    <>
+    <SafeAreaView style={styles.container}>
       {/* <Text >React Native</Text> */}
       {/* <Resim/> */}
       {/* <FlatListCmp/> */}
@@ -21,16 +23,18 @@ export default function App() {
       {/* <ScrollViewCmp/> */}
       {/* <StateCmp/> */}
       {/* <ObjectStateCmp/> */}
-      <ArrayStateCmp />
-    </>
+      {/* <ArrayStateCmp /> */}
+      <EffectCmp/>
+      {/* <LoginScreen/> */}
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "white",
-    // justifyContent: "center",
-    // alignItems: "center",
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

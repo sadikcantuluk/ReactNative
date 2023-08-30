@@ -5,7 +5,7 @@ const ObjectStateCmp = () => {
   const [user, setUser] = useState({ Id: 1, Name: "Yusuf" });
 
   const handlePress = () => {
-    setUser({ ...user, Name: "SADIK" });
+    setUser((prev) => ({ ...prev, Name: "Ahmet" }));
   };
 
   return (
